@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    color: var(--cor-fonte);
+}
+
+:root {
+    --cor-principal: #f7f7f7;
+    --cor-destaque: #f0ede5;
+    --cor-contraste: #fafafa;
+    --cor-fonte: #292727;
+    --cor-hover: #a2a2a2;
+}
+
+body {
+    background-color: var(--cor-principal);
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+.comunicacao {
+    background-color: var(--cor-destaque);
+    margin-right: 0;
+}
+
+.cabecalho {
+    background-color: var(--cor-contraste);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.icones_cabecalho a {
+    margin-left: 2vw;
+}
+
+.icones_cabecalho {
+    margin-left: 70%;
+}
+
+/* ************************Menu Hover****** */
+#menu-principal li {
+    display: inline-flex;
+}
+
+#menu-principal li a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    transition: 0.7s all;
+    color: var(--cor-fonte);
+}
+
+#menu-principal li a:hover {
+    color: var(--cor-hover);
+}
+
+#menu-principal li a:before {
+    content: "";
+    width: 50px;
+    position: absolute;
+    border-bottom: 2px solid var(--cor-hover);
+    bottom: 0;
+    right: 350px;
+    transition: 0.7s all;
+}
+
+#menu-principal li a:hover:before {
+    right: 0;
+}
+
+/* ************************Hover Ícones****** */
+.fa-user-circle-o, .fa-shopping-bag, .fa-instagram, .fa-faceboook, .fa-chevron-left, .fa-chevron-right {
+    color: var(--cor-fonte);
+    font-size: 30px;
+ }
+
+.fa-user-circle-o:hover, .fa-shopping-bag:hover, .fa-instagram:hover, .fa-facebook:hover, .fa-chevron-left:hover, .fa-chevron-right:hover {
+    color: var(--cor-hover);
+    transition: 0.3s;
+}
+
+.titulo_carrossel_produtos {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-item p {
+    margin-bottom: 0;
+    padding: 1%;
+}
+
+.img_carrossel_banner {
+    height: 450px;
+    object-fit: cover;
+}
+
+.secao_carrossel_produtos {
+    margin-bottom: 5vh;
+}
+
+.setas_carrossel_produtos a {
+    margin-right: 3vh;
+}
+
+.carrossel_produtos_mobile {
+    position: relative;
+}
+
+.card {
+    text-align: center;
+    border: none;
+    background-color: inherit;
+}
+
+.card img {
+    border-radius: 0;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.secao_info_sobre {
+    padding: 5%;
+}
+
+.secao_info_sobre h2 {
+    font-size: 1.6em;
+}
+
+.secao_info_sobre h3 {
+    font-size: 1.2em;
+}
+
+.secao_botao_info_sobre {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.botao_info_sobre {
+    border-radius: 0;
+}
+
+.img_sobre_empresa {
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.titulo_instagram {
+    margin-top: 5vh;
+}
+
+.titulo_instagram p {
+    margin-bottom: 0;
+}
+
+.instagram {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.foto_instagram img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.foto_instagram img:hover {
+    opacity: .5;
+    transition: 0.3s;
+}
+
+.foto_instagram {
+    background: url(../img/instagram_icone.svg) black;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 5vh;
+}
+
+.rodape {
+    display: inline-block;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5vh;
+    background-color: var(--cor-contraste);
+    padding-top: 5vh;
+    flex-wrap: wrap;
+}
+
+.topo_rodape {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu_rodape {
+    width: 200px;
+}
+
+.menu-rodape li {
+    list-style: none;
+}
+
+.menu-rodape li a {
+    text-decoration: none;
+    color: var(--cor-fonte);
+}
+
+.newsletter {
+    display: inline-block;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;   
+    width: 300px; 
+}
+
+#input_newsletter {
+    background-color: var(--cor-principal);
+    border: none;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+.inputs_newsletter {
+    display: inline;
+}
+
+#input_newsletter::placeholder {
+    text-align: center;
+}
+
+input[type="text"], input[type="date"], input[type="email"], input[type="password"], textarea {
+    background-color: var(--cor-contraste);
+    border: none;
+    border-radius: 0;
+    margin: 1vh 0 1vh 0;
+    min-width: 30vw;
+}
+
+#botao_senha_login {
+    background-color: var(--cor-contraste);
+    border: none;
+    margin: 1vh 0 1vh 0;
+    padding-right: 1vw;
+}
+
+#botao_enviar_login, #botao_cadastro_enviar, #botao_enviar_login {
+    background-color: black;
+    border-radius: 0;
+    border: none;
+    margin: 5vh 0 5vh 0;
+    width: 100%;
+}
+
+.final_rodape {
+    padding: 2vh;
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.copyright {
+    margin: 0;
+}
+
+.icones_sociais {
+    display: inline-flex;
+    width: 200px;
+    justify-content: center;
+}
+
+.icones_sociais a {
+    margin-right: 10px;
+}
+
+.secao_carrossel_produtos {
+    display: flex;
+    justify-content: space-around;
+}
+    
+.carrossel_produtos_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+/* ************************Tela Load da Página****** */
+#load {
+    position: fixed;
+    display: block;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(225, 225, 225, 0.5);
+}
+
+/* ************************Botão Scroll****** */
+.botao_topo {
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    cursor: pointer;
+    border: none;
+    background-color: var(--cor-detalhes);
+    display: none;
+}
+
+.botao_topo_img {
+    width: 50px;
+}

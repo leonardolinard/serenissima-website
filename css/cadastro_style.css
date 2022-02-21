@@ -1,0 +1,30 @@
+#senha_minima {
+    display: none;
+}
+
+#senha_minima small {
+    color: #ff3636;
+}
+
+#span_senha {
+    height: 40px;
+}
+
+#span_preencha {
+    display: none;
+}
+
+#span_preencha small {
+    color: #ff3636;
+}
+
+.cadastro_realizado {
+    display: block;
+    text-align: center;
+    margin: 20vh 0 20vh 0;
+}
+
+.cadastro_realizado img {
+    height: 100px;
+    margin-top: 10vh;
+}

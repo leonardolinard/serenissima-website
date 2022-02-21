@@ -1,0 +1,15 @@
+.parceiros {
+    display: flex;
+    justify-content: center;
+}
+
+.parceiros_logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.parceiros_logos img {
+    height: 300px;
+}

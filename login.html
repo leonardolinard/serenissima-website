@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/login_style.css">
+    <link rel="stylesheet" href="css/cadastro_style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
+    <title>Sereníssima | Login</title>
+</head>
+
+<body onload="loading()">
+
+    <div id="load"></div>
+
+    <section class="container-fluid">
+
+        <!-- ************************Comunicação****** -->
+        <div class="row comunicacao slick-slide mx-0">
+            <div class="col-md-12">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p class="text-center w-100">Frete Grátis* nas compras acima de R$ 199,00. Aproveite!</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <p class="text-center w-100">A primavera vem aí e com ela o lançamento da nossa coleção Flor
+                                de Laranjeira! Fique de olho!</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <p class="text-center w-100">Coleção Vida Leve com 20% OFF! Somente nessa semana!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row cabecalho sticky-top m-0 no-gutters">
+            <div class="col-md-12">
+
+                <!-- ************************Menu de Navegação****** -->
+                <nav class="navbar navbar-expand-md navbar-light cabecalho_nav">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <section class="collapse navbar-collapse col-md-4" id="navbarNav">
+                        <ul class="navbar-nav" id="menu-principal">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">INÍCIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="loja.html">COLEÇÕES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre.html">SOBRE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="parceiros.html">PARCEIROS</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="col-md-4 d-flex justify-content-center">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logo.png" alt="" style="height: 80px;">
+                        </a>
+                    </section>
+                    <section class="col-md-4 d-inline-flex">
+                        <section class="icones_cabecalho">
+                            <a href="login.html" title="Minha Conta"><i class="fa fa-user-circle-o fa-lg"
+                                    aria-hidden="true"></i></a>
+                            <a href="#" title="Meu Carrinho"><i class="fa fa-shopping-bag fa-lg"
+                                    aria-hidden="true"></i></a>
+                        </section>
+                    </section>
+                </nav>
+
+            </div>
+        </div>
+
+        <section class="row col-md-12 login">
+
+            <form class="formulario_login">
+                <h4>ENTRAR</h4>
+                <p>Por favor, insira seu e-mail e senha.</p>
+                <div class="input-group">
+                    <label for="login_email" class="sr-only">E-mail</label>
+                    <input type="email" class="form-control" id="login_email" aria-describedby="emailHelp"
+                        placeholder="Seu email" onblur="valida_email(this)">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="input-group">
+                    <label for="login_senha" class="sr-only">Senha</label>
+                    <input type="password" class="form-control" id="login_senha" placeholder="Senha">
+                </div>
+
+                <div id="span_senha">
+                    <span id="senha_minima"><small>Sua senha deve conter no
+                            mínimo 6 dígitos.</small></span><br>
+                    <span id="span_preencha"><small>Usuário ou senha inválidos.</small></span>
+                </div>
+
+                <button type="button" class="btn btn-primary" id="botao_enviar_login">Entrar</button>
+                <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se.</a></p>
+                <a href="#">Esqueci minha senha.</a>
+            </form>
+
+        </section>
+
+        <footer class="rodape">
+            <section class="topo_rodape">
+                <section class="menu_rodape">
+                    <ul class="menu-rodape">
+                        <li><a href="#">Política de Entrega</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </section>
+
+                <section class="input-group newsletter">
+                    <label for="input_newsletter">Inscreva-se na nossa Newsletter</label>
+                    <input type="text" placeholder="Insira seu e-mail" class="form-control" id="input_newsletter">
+                    <div class="input-group-prepend inputs_newsletter">
+                        <button type="button" class="btn btn-outline-dark botao_info_sobre mb-3">Inscrever-se</button>
+                    </div>
+                </section>
+                <section class="icones_sociais">
+                    <a href="https://www.instagram.com/soulcodeacademy/"><i class="fa fa-instagram fa-lg"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/SoulCodeAcademy/"><i class="fa fa-facebook fa-lg"
+                            aria-hidden="true"></i></a>
+                </section>
+            </section>
+            <section class="final_rodape">
+                <p class="copyright"><small>&copy; Sereníssima 2021. Todos os direitos reservados.</small></p>
+            </section>
+
+        </footer>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

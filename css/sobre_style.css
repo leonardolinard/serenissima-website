@@ -1,0 +1,15 @@
+:root {
+    --cor-principal: #f7f7f7;
+    --cor-destaque: #f0ede5;
+    --cor-fonte: #292727;
+}
+
+.sobre_img {
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sobre_descricao {
+    margin: 10vh 0 10vh 0;
+}
